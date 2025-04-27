@@ -1,5 +1,5 @@
-name = "Rodrigo"
-age = 47
+name = "Joe"
+age = 132
 
 print("Hello, my name is " + name + " and I am " + str(age) + " years old.")
 
