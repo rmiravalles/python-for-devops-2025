@@ -46,8 +46,6 @@ In the image below, we can see that the Python file couldn't be executed directl
 
 To make the script executable, we can use the `chmod` command. The color of the file name will change to green, indicating that it is now executable.
 
-```bash
-
 ![Permission granted](../media/executable.png)
 
 Now you can run your script directly from the command line:
