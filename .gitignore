@@ -79,9 +79,6 @@ venv/
 # Logs
 *.log
 
-# Media files
-/media/
-
 # Miscellaneous
 .DS_Store
 Thumbs.db
