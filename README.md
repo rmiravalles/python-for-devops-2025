@@ -9,3 +9,5 @@ This are my notes and exercises for the course [Python for Devops](https://www.u
 - [F-Strings](survival-guide/f-strings.md)
 - [Lists](survival-guide/lists.py)
 - [Tuples and Sets](survival-guide/tuples_sets.py)
+- [Dictionaries](survival-guide/dictionaries.py)
+- [Conditionals](survival-guide/conditionals.py)
