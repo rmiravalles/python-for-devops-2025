@@ -1,0 +1,16 @@
+# k3d config file
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: k3d-cluster
+image: rancher/k3s:v1.30.4-k3s1
+servers: 1
+agents: 2
+ports:
+- port: 80:80
+- port: 30000-32767:30000-32767
+- port: 6443:6443
+- port: 8080:8080
+- port: 443:443
+  nodeFilters:
+  - loadbalancer

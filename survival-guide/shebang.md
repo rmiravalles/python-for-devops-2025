@@ -8,6 +8,12 @@ python3 -m venv myenv
 
 This command creates a new directory called `myenv` in your current directory, which contains a copy of the Python interpreter and a local version of the Python standard library.
 
+It's a good practice to make the virtual environment directory hidden by prefixing it with a dot. This way, it won't clutter your project directory. You can create a hidden virtual environment like this:
+
+```bash
+python3 -m venv .venv
+```
+
 You can activate the virtual environment with the following command:
 
 ```bash

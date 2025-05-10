@@ -11,3 +11,8 @@ This are my notes and exercises for the course [Python for Devops](https://www.u
 - [Tuples and Sets](survival-guide/tuples_sets.py)
 - [Dictionaries](survival-guide/dictionaries.py)
 - [Conditionals](survival-guide/conditionals.py)
+
+## Kubernetes CLI
+
+- [Kubernetes CLI](K8s_CLI/K8s_CLI.md)
+- [Kubernetes CLI - Exercise](K8s_CLI/k8s-get-images.py)
