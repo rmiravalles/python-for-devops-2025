@@ -16,7 +16,7 @@ pip install kubernetes
 
 ## The Kubernetes API
 
-The Kubernetes API is a RESTful API that allows you to interact with the Kubernetes cluster. The API is organized into resources, which represent the different objects in the cluster. Each resource has a set of operations that can be performed on it, such as creating, updating, and deleting resources.
+The Kubernetes API is a RESTful API that allows you to interact with the Kubernetes cluster. The API is organized into resources, which represent the different objects in the cluster. Each resource has a set of operations that can be performed on it, such as creating, updating, or deleting.
 The Kubernetes API is organized into different groups, each of which contains a set of resources.
 
 ## The requirements.txt file
@@ -24,10 +24,12 @@ The Kubernetes API is organized into different groups, each of which contains a 
 The `requirements.txt` file is a standard file used in Python projects to specify the dependencies required for the project. It lists the packages and their versions that need to be installed in order to run the project. The `requirements.txt` file for this project should contain the following lines:
 
 ```
-kubernetes==32.0.1
-tabulate==0.9.0
+colorama
+kubernetes
+tabulate
 ```
-This file specifies the versions of the `kubernetes` and `tabulate` libraries that are required for the project. The `kubernetes` library is used to interact with the Kubernetes API, while the `tabulate` library is used to format the output of the script in a tabular format.
+
+This file specifies the `colorama`, `kubernetes` and `tabulate` libraries that are required for the project. The `kubernetes` library is used to interact with the Kubernetes API, while the `tabulate` library is used to format the output of the script in a tabular format. The `colorama` library is used to add color to the output of the script, making it more visually appealing and easier to read.
 
 ## Understanding the code
 

@@ -1,0 +1,19 @@
+groups:
+- name: containers
+  rules:
+  - alert: ContainerMemoryUsageHigh
+    expr: (container_memory_usage_bytes{container_name!="POD",container_name!=""} / container_spec_memory_limit_bytes{container_name!="POD",container_name!=""}) > 0.9
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Container memory usage is high"
+      description: "Container {{ $labels.container_name }} in namespace {{ $labels.namespace }} is using more than 90% of its memory limit."
+  - alert: ContainerCPUUsageHigh
+    expr: rate(container_cpu_usage_seconds_total{container_name!="POD",container_name!=""}[5m]) > 0.8
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Container CPU usage is high"
+      description: "Container {{ $labels.container_name }} in namespace {{ $labels.namespace }} is using more than 80% of its CPU limit."
